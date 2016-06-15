@@ -1,0 +1,6 @@
+imgPerro = cv2.imread('./images/prueba2.jpg')
+imgPerro = cv2.cvtColor(imgPerro,cv2.COLOR_BGR2RGB)
+imgPerro[0:200,0:300,:] = np.ones((200,300,3)) * 125
+print(imgPerro.shape)
+plt.imshow(imgPerro)
+plt.show()
